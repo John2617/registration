@@ -16,6 +16,6 @@ $query = "insert into Registration values('$name','$email','$college','$departme
 if ($result = mysqli_query($con, $query)) {
     echo "<script>alert('Register Successfully');window.location.href='https://seminar.sjctni.edu/CSE/ICS/';</script>";
 } else {
-    echo "Registration Error";
+    echo "<script>alert('Registration Error');window.location.href='register.html';</script>";
 }
 ?>

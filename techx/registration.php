@@ -67,25 +67,44 @@ input[type="submit"]:hover {
     color: red;
     font-size: 14px;
 }
+.notice{
+    border: 1px solid purple;
+    
+    width: 300px;
+    height: 200px;
+    margin-top:60px;
+
+}
 </style>
 </head>
 <body>
     <h2>Registration Form</h2>
+
+    <div class="notice">
+        
+    </div>
+
+    <div class="reg">
     <form action="submit.php" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br>
         
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br>
+
+         <label for="department">Degree:</label><br>
+             <select id="degree" name="degree">
+            <option value="UG">UG</option>
+            <option value="PG">PG</option>
+        </select>
+
+           <label for="department">Department Name:</label><br>
+        <input type="text" id="department" name="department" required><br>
         
         <label for="college">College Name:</label><br>
         <input type="text" id="college" name="college" required><br>
-        
-        <label for="department">Department Name:</label><br>
-        <input type="text" id="department" name="department" required><br>
 
-         <label for="department">Degree:</label><br>
-        <input type="text" id="degree" name="degree" required><br>
+        
         
         <label for="contact">Contact Number:</label><br>
         <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br>
@@ -104,7 +123,7 @@ input[type="submit"]:hover {
         </select>
 
         <label for="secondevent"> Second Event:</label><br>
-        <select id="secondevent" name="secondevent" required>
+        <select id="secondevent" name="secondevent">
             <option value="Glitch Hunt">Glitch Hunt</option>
             <option value="Web Wizard">Web Wizard</option>
             <option value="Brain Byte">Brain Byte</option>
@@ -118,5 +137,6 @@ input[type="submit"]:hover {
         
         <input type="submit" value="Click To Pay">
     </form>
+    </div>
 </body>
 </html>
